@@ -1,3 +1,37 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Playfair+Display:wght@400;700&display=swap');
+
+/* Set Playfair Display as the default font */
+body {
+  font-family: 'Playfair Display', serif;
+}
+
+/* Apply Srisakdi to specific elements */
+.brand-title {
+    font-family: 'Srisakdi', cursive;
+  }
+  /* Gold Accents for Links */
+a {
+  color: #E3B448; /* Gold */
+  transition: color 0.3s ease-in-out;
+}
+
+a:hover {
+  color: #FFD700; /* Brighter gold on hover */
+}
+
+/* Gold Buttons */
+button {
+  background-color: #E3B448;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+  background-color: #FFD700; /* Brighter gold */
+}
+

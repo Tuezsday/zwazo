@@ -17,14 +17,16 @@ export function Navigation() {
   const isHome = location.pathname === "/";
 
   return (
-    <nav className="fixed top-0 left-0 w-full bg-black/90 text-white z-50">
+    <nav className="fixed top-0 left-0 w-full bg-[#0B1612] text-white z-50">
       <div className="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
-        <Link to="/" className="text-xl font-light">
-          Tizwazo Photography
-        </Link>
+      <Link to="/" className="text-2xl md:text-4xl font-light brand-title">
+        Levidna Gerard 
+     </Link>
+
+
 
         {/* Desktop Navigation */}
-        <div className="hidden md:flex items-center space-x-8">
+        <div className="hidden md:flex items-center space-x-8 bg-[#0B1612] px-4 py-2 rounded-lg">
           {navLinks.map((link) => (
             <Link
               key={link.path}
@@ -57,11 +59,11 @@ export function Navigation() {
       <AnimatePresence>
         {isMenuOpen && (
           <motion.div
-            initial={{ opacity: 0, y: -10 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -10 }}
-            className="md:hidden absolute top-full left-0 right-0 bg-black/90 border-t border-gray-800"
-          >
+          initial={{ opacity: 0, y: -10 }}
+          animate={{ opacity: 1, y: 0 }}
+          exit={{ opacity: 0, y: -10 }}
+          className="md:hidden absolute top-full left-0 right-0 bg-[#0B1612] border-t border-gray-800"
+        >        
             <div className="px-4 py-2 flex flex-col space-y-4">
               {navLinks.map((link) => (
                 <Link
