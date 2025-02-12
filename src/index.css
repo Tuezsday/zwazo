@@ -8,7 +8,6 @@ body {
   font-family: 'Playfair Display', serif;
 }
 
-/* Apply Srisakdi to specific elements */
 .brand-title {
     font-family: 'Srisakdi', cursive;
   }
@@ -17,12 +16,45 @@ a {
   color: #E3B448; /* Gold */
   transition: color 0.3s ease-in-out;
 }
-
-a:hover {
-  color: #FFD700; /* Brighter gold on hover */
+.srisakdi-title {
+  font-family: 'Srisakdi', cursive !important; 
 }
 
-/* Gold Buttons */
+.brand-title {
+  font-family: 'Srisakdi', cursive;
+  font-size: 2rem; 
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-shadow: 2px 2px 6px rgba(227, 180, 72, 0.4);
+}
+
+
+@media (max-width: 768px) {
+  .brand-title {
+    font-size: 1.7rem; 
+  }
+}
+
+
+.by-levidna {
+  font-family: 'Srisakdi', cursive;
+  font-size: 4rem; 
+  font-weight: 600;
+  text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.5);
+  letter-spacing: 1px;
+}
+
+@media (max-width: 768px) {
+  .by-levidna {
+    font-size: 3rem; 
+  }
+}
+
+a:hover {
+  color: #FFD700;
+}
+
+
 button {
   background-color: #E3B448;
   color: white;
@@ -32,6 +64,23 @@ button {
 }
 
 button:hover {
-  background-color: #FFD700; /* Brighter gold */
+  background-color: #FFD700; 
+}
+
+.button-gold {
+  background-color: #E3B448; /*gold*/
+  color: white; /*white*/
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 12px 24px;
+  border-radius: 8px;
+  border: 2px solid #E3B448;
+  transition: all 0.3s ease-in-out;
+}
+
+.button-gold:hover {
+  background-color: #FFD700; /*brighter gold*/
+  border-color: #FFD700;
+  transform: scale(1.05);
 }
 

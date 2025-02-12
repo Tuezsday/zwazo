@@ -30,18 +30,19 @@ function Home() {
 
         {/* Hero Content */}
         <div className="relative h-full flex flex-col items-center justify-center text-white px-4">
-          <h1 className="text-5xl md:text-7xl font-light mb-6 text-center">
-            Life of Levi
-          </h1>
-          <p className="text-xl md:text-2xl mb-8 text-center max-w-2xl">
-            Through the lens of imagination and reality
-          </p>
-          <button
-            className="px-8 py-3 bg-white text-black hover:bg-black hover:text-white transition-colors duration-300 text-lg"
-            onClick={scrollToPortfolio} // Corrected function name babes
-          >
-            View Portfolio
-          </button>
+      <h1 className="text-5xl md:text-7xl font-light mb-6 text-center by-levidna">
+        By Levidna
+      </h1>
+
+
+         <p className="text-xl md:text-2xl mb-8 text-center max-w-2xl">
+           Created with intention
+         </p>
+
+       <button className="button-gold" 
+        onClick={scrollToPortfolio}>
+          View Portfolio
+      </button>
         </div>
       </div>
 
